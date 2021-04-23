@@ -1,0 +1,26 @@
+<h1>this is menu</h1>
+<%= render partial: "shared/menu", locals: {title: "Menu1"}%>
+<%= render partial: "shared/menu", locals: {title: "Menu2"} %>
+<%= render partial: "shared/menu", locals: {title: "Menu3"} %>
+
+<ul>
+  <li><a href="/contact"> contact</a></li>
+</ul>
+
+<h1> contact 컨트롤러 index 액션의 뷰파일입니다.</h1>
+<div>
+  2 곱하기 2는 <strong><%= 2 * 2 %></strong>
+</div>
+<div>
+  2 곱하기 3는 <strong><%= 2 * 3 %></strong>
+</div>
+
+<h1>
+  <% ["김범수", "나얼", "박효신", "이수"].each do |name| %>
+    <span><%= name %></span>
+    <br>
+  <% end %>
+</h1>
+
+<h1> 현 재 시 간 </h1>
+<span> <%= DateTime.now() %></span>
